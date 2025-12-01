@@ -1,0 +1,73 @@
+<artifact identifier="mobile-optimized-german-tutor" type="text/html" title="Mobile-Optimized German Tutor Interface">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>German Flow State Tutor - Beginner Prototype</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        background-color: #f5f5f5;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    /* Desktop styles */
+    .container {
+        width: 100%;
+        max-width: 600px;
+        height: 700px;
+        margin: 20px auto;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        border-radius: 8px;
+        overflow: hidden;
+        background: white;
+    }
+
+    iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+        display: block;
+    }
+
+    /* Mobile styles */
+    @media (max-width: 768px) {
+        body {
+            background-color: white;
+        }
+
+        .container {
+            max-width: 100%;
+            height: 100vh;
+            margin: 0;
+            border-radius: 0;
+            box-shadow: none;
+        }
+    }
+
+    /* Tablet styles */
+    @media (min-width: 769px) and (max-width: 1024px) {
+        .container {
+            max-width: 80%;
+            height: 80vh;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <iframe
+            src="https://www.chatbase.co/chatbot-iframe/mSR2IuUVyxTBYeMIdvdW3"
+            title="German Flow State Tutor"
+        ></iframe>
+    </div>
+</body>
+</html>
+```
