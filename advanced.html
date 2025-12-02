@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Module - Flow State German</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            background: #f5f5f5;
+            overflow: hidden;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            padding: 10px 20px;
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+            font-weight: 500;
+            z-index: 1000;
+            transition: all 0.2s;
+        }
+
+        .back-button:hover {
+            background: #fafafa;
+            border-color: #4a90e2;
+        }
+
+        .iframe-container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 80px 20px 20px 20px;
+        }
+
+        .iframe-wrapper {
+            width: 100%;
+            max-width: 600px;
+            height: 100%;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .back-button {
+                top: 10px;
+                left: 10px;
+                padding: 8px 16px;
+                font-size: 13px;
+            }
+
+            .iframe-container {
+                padding: 60px 10px 10px 10px;
+            }
+
+            .iframe-wrapper {
+                border-radius: 8px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .iframe-container {
+                padding: 50px 0 0 0;
+            }
+
+            .iframe-wrapper {
+                max-width: 100%;
+                border-radius: 0;
+                height: calc(100vh - 50px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-button">← Back</a>
+    
+    <div class="iframe-container">
+        <div class="iframe-wrapper">
+            <iframe
+                src="https://www.chatbase.co/chatbot-iframe/4UhGAsXkuJCK5YvT9VcqQ"
+                title="Flow State German - Advanced Module"
+            ></iframe>
+        </div>
+    </div>
+</body>
+</html>
