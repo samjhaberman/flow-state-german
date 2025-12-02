@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flow State German</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            background: white;
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 700px;
+            width: 100%;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 40px;
+            font-weight: 400;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 40px;
+            line-height: 1.6;
+            font-weight: 300;
+        }
+
+        .modules {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .module-card {
+            background: white;
+            border: 1px solid #ddd;
+            padding: 30px 20px;
+            text-decoration: none;
+            color: #333;
+            cursor: pointer;
+        }
+
+        .module-card:hover {
+            border-color: #666;
+        }
+
+        .module-card h2 {
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 12px;
+            color: #1a1a1a;
+        }
+
+        .module-card p {
+            font-size: 15px;
+            color: #666;
+            line-height: 1.5;
+            font-weight: 300;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            .subtitle {
+                font-size: 16px;
+                margin-bottom: 35px;
+            }
+
+            .modules {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .module-card {
+                padding: 25px 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 28px;
+            }
+
+            .subtitle {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Flow State German</h1>
+        <p class="subtitle">
+            Choose your starting point.
+        </p>
+
+        <div class="modules">
+            <a href="beginner.html" class="module-card">
+                <h2>Beginner Module</h2>
+                <p>Start from absolute zero.</p>
+            </a>
+
+            <a href="advanced.html" class="module-card">
+                <h2>Advanced Module</h2>
+                <p>Introduction to a tricky advanced topic.</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
